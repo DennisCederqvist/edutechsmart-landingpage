@@ -22,13 +22,12 @@ By modernizing the layout, focusing on the mobile first approach, and using the 
 
 ## Milestones
 
-MVP
-
-QA/Testing 
-
-UI/UX Improvements 
-
-Features Completed 
+| Milestnes | status|
+|--------|-------|
+| MVP | 50% |
+| QA/Testing | 10% |
+| UI/UX Improvements | 20% |
+| Features Completed | 0% |
 
 ## Status
 
