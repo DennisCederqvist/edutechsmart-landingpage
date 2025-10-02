@@ -38,17 +38,19 @@ Planning stages
 ## Design Ideas
 
 Wireframe for the Hero Page.
+
 <img src="assets/images/Wireframe.png" width="400">
 
 ### Color Palett
 
+<img src="assets/images/Light Steel Color Swatch.png">
 
+<img src="assets/images/Purple Raindrop Color Swatch.png">
 
-
-README – ska minst innehålla:
+<!-- README – ska minst innehålla:
 • Kort sammanfattning av projektet och vad ni vill uppnå.
 • Backlog och planerade features (lista med issues/milestones kopplade).
 • Färgschema och designidéer (t.ex. screenshots, färgpalett, skisser).
 • Status (vad som är klart, vad som pågår, vad som kommer sen).
 • Pitch – varför ert upplägg är rätt för Edutechsmart.
-Tänk hela tiden att README är det första Matti ser – den ska vara tydlig, snygg och lockande.
+Tänk hela tiden att README är det första Matti ser – den ska vara tydlig, snygg och lockande. -->
