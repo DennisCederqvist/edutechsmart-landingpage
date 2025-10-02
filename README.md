@@ -53,4 +53,5 @@ Wireframe for the Hero Page.
 • Färgschema och designidéer (t.ex. screenshots, färgpalett, skisser).
 • Status (vad som är klart, vad som pågår, vad som kommer sen).
 • Pitch – varför ert upplägg är rätt för Edutechsmart.
+
 Tänk hela tiden att README är det första Matti ser – den ska vara tydlig, snygg och lockande. -->
