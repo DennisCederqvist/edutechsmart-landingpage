@@ -8,24 +8,16 @@ Today, more than 70% of web traffic comes from mobile devices, which means a mob
 By modernizing the layout, focusing on the mobile first approach, and using the latest technologies we can improve the user experience and make the site more engaging and trustworthy.
 
 
-## Backlog and planned features
-
-Modern and trustworthy design.
-
-Responsiveness (Mobile-first).
-
-Accessibility .
-
-Dark Mode for visual enhancement.
-
-<!-- Color Blind mode -->
-Balance of visuals and text.
-
-Easily accessible information.
-
-Rounder and more welcoming shapes.
-
-Glass effects components for visual appeal.
+| ## Backlog |
+|-------------------------------|
+| Modern and trustworthy design. |
+| Responsiveness (Mobile-first). |
+| Accessibility. |
+| Dark Mode for visual enhancement. |
+| Balance of visuals and text. |
+| Easily accessible information. |
+| Rounder and more welcoming shapes. |
+| Glass effects components for visual appeal. |
 
 ## Milestones
 
@@ -56,7 +48,7 @@ Wireframe for the Hero Page.
 ## Pitch
 
 We are going to transform your website, making it worthy of 2025 and beyond,
- 
+
 Converting todays visitors into the customers of the future.
 
 
