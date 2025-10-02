@@ -2,10 +2,6 @@
 
 ## Project Overview
 
-Lorem
-
-## Pitch
-
 Your landing page is often the initial point of contact - and for most of your customers, it's their very first impression.
 Today, more than 70% of web traffic comes from mobile devices, which means a mobile-first, fast-loading landing page is essential for a great user experience.
 
@@ -18,7 +14,7 @@ Modern and trustworthy design.
 Responsiveness (Mobile-first).
 Accessibility .
 Dark Mode for visual enhancement.
-%% Color Blind - Mode %%
+<!-- Color Blind mode -->
 Balance of visuals and text.
 Easily accessible information.
 Rounder and more welcoming shapes.
@@ -43,9 +39,15 @@ Wireframe for the Hero Page.
 
 ### Color Palett
 
-<img src="assets/images/Light Steel Color Swatch.png">
+<img src="assets/images/Light Steel Color Swatch.png" width="400">
 
-<img src="assets/images/Purple Raindrop Color Swatch.png">
+<img src="assets/images/Purple Raindrop Color Swatch.png" widht="400">
+
+## Pitch
+
+We are going to transform your website, making it worthy of 2025 and beyond, 
+Converting todays visitors into the customers of the future.
+
 
 <!-- README – ska minst innehålla:
 • Kort sammanfattning av projektet och vad ni vill uppnå.
