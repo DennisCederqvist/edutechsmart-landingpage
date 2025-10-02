@@ -41,7 +41,7 @@ Wireframe for the Hero Page.
 
 <img src="assets/images/Light Steel Color Swatch.png" width="400">
 
-<img src="assets/images/Purple Raindrop Color Swatch.png" widht="400">
+<img src="assets/images/Purple Raindrop Color Swatch.png" width="400">
 
 ## Pitch
 
