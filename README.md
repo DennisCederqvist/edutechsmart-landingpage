@@ -11,21 +11,31 @@ By modernizing the layout, focusing on the mobile first approach, and using the 
 ## Backlog and planned features
 
 Modern and trustworthy design.
+
 Responsiveness (Mobile-first).
+
 Accessibility .
+
 Dark Mode for visual enhancement.
+
 <!-- Color Blind mode -->
 Balance of visuals and text.
+
 Easily accessible information.
+
 Rounder and more welcoming shapes.
+
 Glass effects components for visual appeal.
 
 ## Milestones
 
-MVP - 
-QA/Testing - 
-UI/UX Improvements - 
-Features Completed - 
+MVP
+
+QA/Testing 
+
+UI/UX Improvements 
+
+Features Completed 
 
 ## Status
 
@@ -45,7 +55,8 @@ Wireframe for the Hero Page.
 
 ## Pitch
 
-We are going to transform your website, making it worthy of 2025 and beyond, 
+We are going to transform your website, making it worthy of 2025 and beyond,
+ 
 Converting todays visitors into the customers of the future.
 
 
