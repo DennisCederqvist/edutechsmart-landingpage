@@ -38,6 +38,7 @@ Planning stages
 ## Design Ideas
 
 Wireframe for the Hero Page.
+
 <img src="assets/images/Wireframe.png" width="400">
 
 ### Color Palett
