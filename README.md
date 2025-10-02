@@ -7,8 +7,9 @@ Today, more than 70% of web traffic comes from mobile devices, which means a mob
 
 By modernizing the layout, focusing on the mobile first approach, and using the latest technologies we can improve the user experience and make the site more engaging and trustworthy.
 
+## Backlog and planned features
 
-| ## Backlog |
+| Backlog |
 |-------------------------------|
 | Modern and trustworthy design. |
 | Responsiveness (Mobile-first). |
