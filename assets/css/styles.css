@@ -84,3 +84,20 @@ body {
     font-style: normal;
     padding:1rem 0
 }
+@media (min-width: 768px) {
+    .information {
+        max-width: 800px;
+        padding: 3rem;
+        margin: 3rem auto;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+    .information h2 {
+        font-size: 2rem;
+        color: black;
+    }
+    .information p{
+        font-size: 1.1rem;
+        color: black;
+    }
+}
