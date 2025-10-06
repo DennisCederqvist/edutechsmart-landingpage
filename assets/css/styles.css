@@ -104,10 +104,18 @@ body {
     gap: 20px;
 }
 
+.testim-img {
+    width: 120px;
+    height: 120px;
+    flex: 0 0 120px;
+}
+
 .testim-img img {
-   width: 300px;
-   height: auto;
-   border-radius: 999px;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 50%;
 }
 
 .testim-name {
@@ -132,19 +140,18 @@ body {
 }
 
 .slides {
-    position: relative;
+    display: grid;
+    /* position: relative;
     height: auto;
     min-height: 0;
-    transition: height 300ms ease;
+    transition: height 300ms ease; */
 }
 
 .slide {
-    position: absolute;
-    inset: 0;
+    grid-area: 1/1;
     opacity: 0;
     transition: opacity 0.5s ease;
     pointer-events: none;
-    z-index: 1;
 }
 .slide.active {
     opacity: 1;
@@ -182,6 +189,7 @@ body {
     margin-top: 15px;
     
 }
+
 .dots button {
     width: 10px;
     height: 10px;
@@ -191,6 +199,7 @@ body {
     cursor: pointer;
     z-index: 5;
 }
+
 .dots button.active {
     background: #333;
 }
