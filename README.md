@@ -52,6 +52,10 @@ We are going to transform your website, making it worthy of 2025 and beyond,
 Converting todays visitors into the customers of the future.
 
 
+### Developer Notes
+
+Minimum supported screen 375px
+
 <!-- README – ska minst innehålla:
 • Kort sammanfattning av projektet och vad ni vill uppnå.
 • Backlog och planerade features (lista med issues/milestones kopplade).
