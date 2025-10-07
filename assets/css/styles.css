@@ -209,7 +209,6 @@ body {
 .highlighted {
     background: #F62584;
     background: linear-gradient(to right, #F62584 23%, #3A0CA2 68%);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
