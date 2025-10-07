@@ -21,7 +21,7 @@ body {
     line-height: 1.6;
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #333333 100%);
+    /*background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #333333 100%);*/
     min-height: 100vh;
     /* improve overall legibility */
     color: rgba(255,255,255,0.95);
@@ -97,7 +97,8 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     /* slightly stronger glass background so text reads better */
-    background: rgba(255, 255, 255, 0.10);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #333333 100%);
+    /*background: rgba(255, 255, 255, 0.10);*/
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 24px;
     box-shadow: 
