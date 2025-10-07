@@ -423,13 +423,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media (min-width: 768px) {
-    .wrapper {
+    /* .wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 30px;
         align-items: flex-start;
-    }
+    } */
 
     .dropdown {
         flex: 1;
