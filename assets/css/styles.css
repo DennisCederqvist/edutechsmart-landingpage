@@ -84,6 +84,58 @@ body {
     font-style: normal;
     padding:1rem 0
 }
+
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .dropdown {
+        flex: 1;
+        border: none;
+        padding: 0 20px;
+    }
+
+    .dropdown:not(:last-child) {
+        border-right: 1px solid #ddd;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .dropbtn {
+        cursor: default;
+        pointer-events: none;
+        background: none;
+        border: none;
+        text-align: left;
+        padding: 0 0 10px;
+        font-weight: 700;
+        color: #222;
+    }
+
+    .dropdown-content {
+        display: block !important;
+        padding: 0;
+        background: none;
+        line-height: 1.6;
+    }
+
+    .wrapper .dropdown-content {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+    color: black;
+    }
+}
 .information {
     padding: 1.5 rem;
     margin: 2rem auto;
