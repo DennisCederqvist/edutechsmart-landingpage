@@ -225,7 +225,8 @@ body {
 .header-text {
     display: flex;
     align-items: center;
-    max-width: 700px ;
+    max-width: 700px;
+}
 /* Olivia START */
 
 
@@ -612,6 +613,10 @@ body {
     color: black;
     }
 }
+
+
+
+
 .information {
     padding: 1.5rem;
     margin: 2rem auto;
@@ -683,4 +688,18 @@ body {
         transform: translateY(0);
     }
 }
+
+
+.icon-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.accordion {
+    background: #4d4e4f;
+    padding: 1.5rem;
+}
+
+.accordion p, .accordion li {
+    color: #000000;
 }
