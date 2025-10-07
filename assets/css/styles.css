@@ -84,6 +84,25 @@ body {
     font-style: normal;
     padding:1rem 0
 }
+.information {
+    padding: 1.5 rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    background-color: #4d4e4f;
+    color: #000000;
+    border-radius: 12px;
+    line-height: 1.7;
+    text-align: left;
+}
+.information h2 {
+    color: #050505;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.information p {
+    font-size: 1rem;
+    color: #000000;
+}
 
 .dropdown {
   border-bottom: 1px solid #ddd;
