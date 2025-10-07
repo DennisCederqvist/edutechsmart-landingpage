@@ -69,9 +69,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* don't center everything vertically — we'll let main content flow and push footer down */
-    justify-content: flex-start;
-    padding: 0 2rem;
 }
 
 .headlines {
@@ -88,6 +85,43 @@ h1, h2, h3, h4, h5, h6 {
     padding:1rem 0
 }
 
+
+/* Olivia START */
+
+
+
+.p-contact2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.p-slash {
+    color: #1D9FCF; /* Turquoise */
+    font-weight: 700;
+}
+
+.a-contact {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Icons */
+.icon-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-contact {
+    width: 20px;
+    margin: 0 3px;
+}
+
+
+
+/* Olivia END */
 /* Dennis CSS */
 
 .elementor-testimonials {
