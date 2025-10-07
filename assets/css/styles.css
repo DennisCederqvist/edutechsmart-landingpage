@@ -121,7 +121,7 @@ body {
     border: none;
     cursor: pointer;
     padding: 0;
-    margin: 20px;
+    margin: 0;
 }
 
 .burger-icon span {
@@ -598,7 +598,7 @@ body {
     }
 
     .dropdown-content {
-        display: block !important;
+        /*display: block !important;*/
         padding: 0;
         background: none;
         line-height: 1.6;
@@ -611,6 +611,14 @@ body {
     height: auto !important;
     overflow: visible !important;
     color: black;
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem;
+        align-items: stretch;
+        min-height: auto;
     }
 }
 

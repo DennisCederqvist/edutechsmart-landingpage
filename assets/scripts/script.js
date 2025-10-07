@@ -71,6 +71,7 @@ buttons.forEach(button => {
 
     // Stäng alla andra först
     document.querySelectorAll('.dropdown').forEach(dropdown => {
+        console.log('i was clicked')
       if (dropdown !== clickedDropdown) {
         dropdown.classList.remove('active');
       }
