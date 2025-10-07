@@ -63,12 +63,19 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* our work start here */
+
+body {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #333333 100%);
+}
 .wrapper{
     /* allow page to grow while ensuring at least full viewport height */
     min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
 }
 
 .headlines {
@@ -218,7 +225,8 @@ h1, h2, h3, h4, h5, h6 {
 .header-text {
     display: flex;
     align-items: center;
-    max-width: 700px ;
+    max-width: 700px;
+}
 /* Olivia START */
 
 
@@ -346,11 +354,11 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     cursor: pointer;
 }
-.prev { 
-    left: -20px; 
+.prev {
+    left: -20px;
 }
-.next { 
-    right: -20px; 
+.next {
+    right: -20px;
 }
 
 .dots {
@@ -359,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     gap: 10px;
     margin-top: 15px;
-    
+
 }
 
 .dots button {
@@ -387,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
     /*background: rgba(255, 255, 255, 0.10);*/
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 24px;
-    box-shadow: 
+    box-shadow:
         0 8px 32px rgba(0, 0, 0, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
@@ -605,8 +613,12 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
     }
 }
+
+
+
+
 .information {
-    padding: 1.5 rem;
+    padding: 1.5rem;
     margin: 2rem auto;
     max-width: 90%;
     background-color: #4d4e4f;
@@ -667,6 +679,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes slideDown {
-  from { opacity: 0; transform: translateY(-5px); }
-  to   { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.icon-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.accordion {
+    background: #4d4e4f;
+    padding: 1.5rem;
+}
+
+.accordion p, .accordion li {
+    color: #000000;
 }
