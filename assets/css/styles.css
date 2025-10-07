@@ -86,6 +86,139 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/*nav bar mobile*/
+.mob-nav {
+    color: #000;
+    height:100px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255 255 255 / 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .26);
+}
+.burger-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Burger icon */
+.burger-icon {
+    display: block;
+    width: 30px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 20px;
+}
+
+.burger-icon span {
+    display: block;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Full page overlay */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay.active {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
+
+/* Menu content */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-content a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay-content a:hover {
+    color: #f1f1f1;
+}
+
+/* Responsive design */
+@media screen and (max-height: 450px) {
+    .overlay-content a {
+        font-size: 20px;
+    }
+    .close-btn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+
+
+
+.highlighted {
+    background: #F62584;
+    background: linear-gradient(to right, #F62584 23%, #3A0CA2 68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.featured-image {
+    width:40%;
+    max-width: 300px;
+}
+
+.featured-background {
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    max-width: 700px ;
 /* Olivia START */
 
 
