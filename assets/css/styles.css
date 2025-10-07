@@ -270,6 +270,12 @@ body {
     margin: 15px;
 }
 
+.testim-head {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
 .testim {
     padding: 20px;
     font-size: 1.3em;
@@ -383,6 +389,17 @@ body {
 .dots button.active {
     background: #333;
 }
+
+@media (min-width: 425px) {
+    .elementor-testimonials.carousel {
+        max-width: 500px;
+        margin: 100px auto;
+    }
+}
+
+
+/* Dennis Code Ends */
+
 /* Black and white gradient background (visual only) */
 
 
@@ -576,6 +593,8 @@ body {
         flex: 1;
         border: none;
         padding: 0 20px;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
     }
 
     .arrow {
@@ -654,7 +673,6 @@ body {
   background: none;
   border: none;
   padding: 18px 0;
-  text-align: left;
   font-size: 20px;
   font-weight: 600;
   color: #222;
@@ -667,6 +685,7 @@ body {
 
 .arrow {
   font-size: 16px;
+  margin: 10px;
   transition: transform 0.3s ease;
 }
 
