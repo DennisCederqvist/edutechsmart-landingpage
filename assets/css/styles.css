@@ -18,10 +18,17 @@
 
 body {
     /* 4. Add accessible line-height */
-    line-height: 1.5;
+    line-height: 1.6;
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
+    /*background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #333333 100%);*/
+    min-height: 100vh;
+    /* improve overall legibility */
+    color: rgba(255,255,255,0.95);
+    font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-size: 16px;
 }
+
 
 /* 6. Improve media defaults */
 img, picture, video, canvas, svg {
@@ -57,18 +64,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* our work start here */
 .wrapper{
-    height: 100vh;
-    margin:0;
+    /* allow page to grow while ensuring at least full viewport height */
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 2rem ;
-}
-
-body {
-    color: black;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    /* don't center everything vertically — we'll let main content flow and push footer down */
+    justify-content: flex-start;
+    padding: 0 2rem;
 }
 
 .headlines {
@@ -202,4 +205,299 @@ body {
 
 .dots button.active {
     background: #333;
+}
+/* Black and white gradient background (visual only) */
+
+
+/* Mobile-First Black & White Glassmorphism Footer */
+.glass-footer {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    /* slightly stronger glass background so text reads better */
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #333333 100%);
+    /*background: rgba(255, 255, 255, 0.10);*/
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* push the footer to the bottom when wrapper is a column flex container */
+.glass-footer{
+    margin-top: auto;
+}
+
+.glass-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-tagline {
+    font-family: "Boldonse", system-ui;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: rgba(255,255,255,0.98);
+    font-weight: 600;
+    line-height: 1.3;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Mobile-first single column layout */
+.footer-offices {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.office {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-height: 44px;
+}
+
+.office::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.office:hover::before,
+.office:active::before {
+    left: 100%;
+}
+
+.office:hover,
+.office:active {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.office h4 {
+    font-family: "Boldonse", system-ui;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.98);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.office-details p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 0.2rem;
+}
+
+.office-details p:last-child {
+    margin-bottom: 0;
+}
+
+/* Touch-friendly contact links */
+.contact-link {
+    display: block;
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem 0;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.contact-link:hover,
+.contact-link:active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 0.5rem;
+    transform: translateX(4px);
+}
+
+.contact-link:last-child {
+    margin-bottom: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 0.6rem; /* reduced to pull content up */
+    margin-top: -0.2rem; /* slight negative margin to nudge upward */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.8s ease-out 0.3s both;
+}
+
+.footer-bottom p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.45);
+}
+
+
+@media (min-width: 768px) {
+    .information {
+        max-width: 800px;
+        padding: 3rem;
+        margin: 3rem auto;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+    .information h2 {
+        font-size: 2rem;
+        color: black;
+    }
+    .information p{
+        font-size: 1.1rem;
+        color: black;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .dropdown {
+        flex: 1;
+        border: none;
+        padding: 0 20px;
+    }
+
+    .dropdown:not(:last-child) {
+        border-right: 1px solid #ddd;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .dropbtn {
+        cursor: default;
+        pointer-events: none;
+        background: none;
+        border: none;
+        text-align: left;
+        padding: 0 0 10px;
+        font-weight: 700;
+        color: #222;
+    }
+
+    .dropdown-content {
+        display: block !important;
+        padding: 0;
+        background: none;
+        line-height: 1.6;
+    }
+
+    .wrapper .dropdown-content {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+    color: black;
+    }
+}
+.information {
+    padding: 1.5 rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    background-color: #4d4e4f;
+    color: #000000;
+    border-radius: 12px;
+    line-height: 1.7;
+    text-align: left;
+}
+.information h2 {
+    color: #050505;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.information p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.dropdown {
+  border-bottom: 1px solid #ddd;
+}
+
+.dropbtn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px 0;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.arrow {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  padding: 10px 0 20px;
+  color: #444;
+  line-height: 1.6;
+  animation: slideDown 0.3s ease;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
