@@ -103,3 +103,49 @@ body {
     font-size: 1rem;
     color: #000000;
 }
+
+.dropdown {
+  border-bottom: 1px solid #ddd;
+}
+
+.dropbtn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px 0;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.arrow {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  padding: 10px 0 20px;
+  color: #444;
+  line-height: 1.6;
+  animation: slideDown 0.3s ease;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
