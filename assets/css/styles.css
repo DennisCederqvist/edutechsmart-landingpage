@@ -383,7 +383,13 @@ body {
     right: -10px;
 }
 
+.dots {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 
+}
 
 .dots button {
     width: 10px;
