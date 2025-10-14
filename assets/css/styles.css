@@ -115,6 +115,8 @@ body {
     background-color: rgb(255 255 255 / 0.2);
     backdrop-filter: blur(10px);
     position: fixed;
+    left: 0;
+    right: 0;
     width: 100%;
     box-shadow: 0 0 6px rgba(0, 0, 0, .26);
     z-index: 10;
@@ -258,7 +260,6 @@ body {
 .a-contact {
     color: #333;
     text-decoration: none;
-    cursor: pointer;
 }
 
 
@@ -329,7 +330,7 @@ body {
 
 .elementor-testimonials.carousel {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     padding: 20px;
     margin: 15px;
 }
@@ -376,20 +377,19 @@ body {
     cursor: pointer;
 }
 .prev {
-    left: -20px;
+    left: -10px;
 }
 .next {
-    right: -20px;
+    right: -10px;
 }
 
-.dots {
+/* .dots {
     position: static;
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 15px;
 
-}
+} */
 
 .dots button {
     width: 10px;
@@ -423,15 +423,16 @@ body {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     /* slightly stronger glass background so text reads better */
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #333333 100%);
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     /*background: rgba(255, 255, 255, 0.10);*/
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 24px;
+    /* border-radius: 24px; */
     box-shadow:
         0 8px 32px rgba(0, 0, 0, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -439,7 +440,7 @@ body {
 
 /* push the footer to the bottom when wrapper is a column flex container */
 .glass-footer{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .glass-footer::before {
@@ -575,6 +576,10 @@ body {
     text-shadow: 0 1px 0 rgba(0,0,0,0.45);
 }
 
+.dropdown {
+  border-bottom: 1px solid #ddd;
+}
+
 
 @media (min-width: 768px) {
     .information {
@@ -592,6 +597,7 @@ body {
         font-size: 1.1rem;
         color: black;
     }
+    
 }
 
 
@@ -656,6 +662,9 @@ body {
     .glass-footer {
         width: 100%;
     }
+    .dropdown {
+  border-bottom: 0px;
+}
 }
 
 
@@ -664,8 +673,8 @@ body {
 .information {
     padding: 1.5rem;
     margin: 2rem auto;
-    max-width: 90%;
-    background-color: #ccc;
+    max-width: 700px;
+    /* background-color: #ccc; */
     color: #000000;
     border-radius: 12px;
     line-height: 1.7;
@@ -679,10 +688,6 @@ body {
 .information p {
     font-size: 1rem;
     color: #000000;
-}
-
-.dropdown {
-  border-bottom: 1px solid #ddd;
 }
 
 .dropbtn {
@@ -740,7 +745,7 @@ body {
 }
 
 .accordion {
-    background: #ccc;
+    background: #cccccc1a;
     padding: 1.5rem;
 }
 
