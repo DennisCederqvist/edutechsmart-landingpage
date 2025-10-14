@@ -340,6 +340,9 @@ body {
     overflow: hidden;
     padding: 20px;
     margin: 15px;
+    /* border: 2px solid #ccc;
+    border-radius: 50px;
+    width: 400px; */
 }
 
 .elementor-testimonials {
