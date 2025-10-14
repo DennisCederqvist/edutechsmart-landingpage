@@ -91,6 +91,7 @@ body {
 
 .headwrapper h1 {
     margin-top: 50px;
+    text-transform: uppercase;
 }
 
 .headlines {
