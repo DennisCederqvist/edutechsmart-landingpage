@@ -239,7 +239,7 @@ body {
 
 .featured-background {
     background: #3F5EFB;
-    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 30%, rgba(252, 70, 107, 1) 100%);
 }
 
 .header-text {
@@ -431,7 +431,7 @@ body {
     -webkit-backdrop-filter: blur(15px);
     /* slightly stronger glass background so text reads better */
     background: #3F5EFB;
-    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 10%, rgba(252, 70, 107, 1) 100%);
     /*background: rgba(255, 255, 255, 0.10);*/
     border: 1px solid rgba(255, 255, 255, 0.15);
     /* border-radius: 24px; */
