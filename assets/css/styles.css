@@ -89,6 +89,10 @@ body {
     padding: 0 30px;
 }
 
+.headwrapper h1 {
+    margin-top: 50px;
+}
+
 .headlines {
     font-family: "Boldonse", system-ui;
     font-weight: 600;
@@ -213,6 +217,9 @@ body {
         top: 15px;
         right: 35px;
     }
+    .headwrapper h1 {
+    margin-top: 0;
+}
 }
 
 
@@ -227,7 +234,6 @@ body {
 }
 
 .featured-image {
-    width:40%;
     max-width: 300px;
 }
 
@@ -238,6 +244,7 @@ body {
 
 .header-text {
     display: flex;
+    flex-direction: column;
     align-items: center;
     max-width: 675px;
 }
@@ -597,6 +604,12 @@ body {
         font-size: 1.1rem;
         color: black;
     }
+    .header-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 675px;
+}
     
 }
 
